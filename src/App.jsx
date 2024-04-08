@@ -6,7 +6,7 @@ export default function App() {
   return (
     <section>
       <HowlsMovin />
-      <div>
+      <div className='px-4'>
         <Conteudo />
         <Estudios />
       </div>
