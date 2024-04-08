@@ -1,12 +1,15 @@
 import HowlsMovin from './components/Comeco'
 import Conteudo from './components/Conteudo'
-import Cont from './components/Conteudo'
+import Estudios from './components/Estudio'
 
 export default function App() {
   return (
     <section>
       <HowlsMovin />
-      <Conteudo />
+      <div>
+        <Conteudo />
+        <Estudios />
+      </div>
     </section>
   )
 }
