@@ -1,8 +1,10 @@
-import React from 'react'
+import Banner from '/howls.jpg'
 
-function Conteudo() {
+export default function HowlsMoving() {
   return (
     <section>
+        <img src={Banner} alt="Banner do filme Howl's Moving Castle" />
+
         <h1 className='font-poppins font-extrabold uppercase text-6xl mt-20 text-sky-500'>Howl's Moving Castle</h1>
         <p className='font-poppins  font-normal mt-4 mb-10'>É um filme de animação japonês de fantasia de 2004 escrito e dirigido por Hayao Miyazaki. É vagamente baseado no romance homônimo de 1986, da autora britânica Diana Wynne Jones. O filme foi produzido por Toshio Suzuki, animado pelo Studio Ghibli e distribuído pela Toho.</p>
 
@@ -20,9 +22,6 @@ function Conteudo() {
 
         A história é um conto de amizade, coragem e autodescoberta, ambientado em um mundo de magia, máquinas e personagens cativantes.<br></br></p>
 
-
     </section>
   )
 }
-
-export default Conteudo
