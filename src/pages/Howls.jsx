@@ -14,6 +14,7 @@ import Ryu from '/ryu.webp'
 import Yo from '/yo.jpg'
 
 import Head from '../components/Header'
+import { Link } from "react-router-dom"
 
 
 export default function () {
@@ -23,7 +24,7 @@ export default function () {
     <Head />
     </header>
   
-      <section>
+      <section className='px-3'>
         <h1 className='font-poppins font-extrabold uppercase text-6xl mt-20 text-sky-500'>Howl's Moving Castle</h1>
         <p className='font-poppins  font-normal mt-4 mb-10'>É um filme de animação japonês de fantasia de 2004 escrito e dirigido por Hayao Miyazaki. É vagamente baseado no romance homônimo de 1986, da autora britânica Diana Wynne Jones. O filme foi produzido por Toshio Suzuki, animado pelo Studio Ghibli e distribuído pela Toho.</p>
 
@@ -109,19 +110,27 @@ export default function () {
           </div>
           <h1 className='font-poppins text-sky-500 text-5xl font-semibold mb-4'>Onde assistir</h1>
           <p className='font-poppins mb-4'>
-            "Howl's Moving Castle" está disponível para assistir nos seguintes serviços de streaming no Brasil:
+            O filme está disponível para assistir nos seguintes serviços de streaming no Brasil:
           </p>
-          <ul className='font-poppins mb-10'>
+          <ul className='font-poppins mb-10 flex'>
             <li>
-              <a href='https://www.netflix.com/br-en/title/70028883' target='_blank' rel='noopener noreferrer' className='text-sky-500 text-4xl font-medium'>Netflix</a>
+              <a href='https://www.netflix.com/br-en/title/70028883' target='_blank' rel='noopener noreferrer' className='text-slate-50 text-4xl font-medium p-3 bg-blue-500 hover:bg-blue-700 py-2 rounded mr-2.5'>Netflix</a>
             </li>
             <li>
-              <a href='https://www.amazon.com.br/' target='_blank' rel='noopener noreferrer' className='text-sky-500 text-4xl font-medium'>Amazon Prime Video</a>
-            </li>
-            <li>
-              <a href='https://www.disneyplus.com/pt-br/' target='_blank' rel='noopener noreferrer' className='text-sky-500 text-4xl font-medium'>Disney+</a> 
+              <a href='https://www.primevideo.com/detail/Howls-Moving-Castle/0SFDBNXGUNWOS865SIHWB8KTCK' target='_blank' rel='noopener noreferrer' className='text-slate-50 text-4xl font-medium p-3 bg-blue-500 hover:bg-blue-700 py-2 rounded mr-2.5'>Amazon Prime Video</a>
             </li>
           </ul>
+
+          <div className='flex'>
+            <h2 className='font-poppins text-sky-500 text-4xl font-semibold mb-4'>Quer assistir a mais filmes do Studio Ghibli?</h2>
+            <nav>
+              <ul>
+                <li>
+                  <Link className='text-slate-50 text-4xl font-medium p-3 bg-blue-500 hover:bg-blue-700 py-2 rounded mr-2' to='/chihiro'>Saiba mais</Link>
+                </li>
+              </ul>
+            </nav>  
+          </div>
       </section>
     </div>
   )

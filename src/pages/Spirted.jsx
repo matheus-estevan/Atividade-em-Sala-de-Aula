@@ -11,6 +11,11 @@ export default function Spirted() {
         </header>
 
           <main>
+            <div className='b-3 bg-sky-500'>
+
+            </div>
+
+
             <nav>
               <ul>
                 <li>
